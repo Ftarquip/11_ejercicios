@@ -3,8 +3,10 @@
 using namespace std;
 int main(){
     int n, max, A[20];
+    cout << "Ingrese la cantidad de Numeros a comparar (max 20)";
     cin >> n;
-    for (int i=0; i <n; i++){
+    for (int i=0; i < n; i++){
+        cout << "Ingrese el numero: ";
         cin >> A[i];
     }
     max = A[0];
@@ -13,6 +15,6 @@ int main(){
             max=A[i];
         }
     }
-    cout << max;
+    cout << "El numero mayor es: "<< max;
     return 0;
 }
